@@ -72,7 +72,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Botón de inicio de sesión -->
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btnIniciarSesion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -84,10 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"
-        app:iconPadding="8dp"
-        app:iconGravity="textStart"
-        app:iconTint="#FFFFFF"/>
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout" />
 
     <!-- Texto para crear una nueva cuenta -->
 

@@ -3,6 +3,7 @@ package com.example.pinguiapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,10 +13,20 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Login extends AppCompatActivity {
 
+Button btnLog  ;
+TextView btnNotCount;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+
+       // botones
+        btnLog = (Button) findViewById(R.id.btnIniciarSesion);
+        btnNotCount = (TextView) findViewById(R.id.createAccountTextView);
+
 
         // Habilita el modo Edge-to-Edge
         EdgeToEdge.enable(this);
@@ -32,7 +43,7 @@ public class Login extends AppCompatActivity {
             return insets;
         });
 
-        // Encuentra el TextView y establece el OnClickListener
+      /***  // Encuentra el TextView y establece el OnClickListener
         TextView createAccountTextView = findViewById(R.id.createAccountTextView);
         createAccountTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,5 +53,13 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+*/
+
+
+
+
     }
+
+
 }
+
