@@ -47,6 +47,9 @@ public class RegistroActivity extends AppCompatActivity {
 
 
 
+
+
+
         // Encuentra el TextView y establece el OnClickListener
         TextView loginTextView = findViewById(R.id.loginTextView);
         loginTextView.setOnClickListener(new View.OnClickListener() {
