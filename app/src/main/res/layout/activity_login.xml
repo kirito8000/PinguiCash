@@ -7,16 +7,6 @@
     android:background="#B9D6FE"
     tools:context=".Login">
 
-    <!-- Imagen del nombre de la app -->
-    <ImageView
-        android:id="@+id/appNameImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!-- Imagen decorativa 1 -->
     <ImageView
         android:id="@+id/imageView"

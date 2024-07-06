@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_pinguinos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Botón Tienda -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toTopOf="@id/btnTienda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/letrasfer" />
+
+    <Button
+        android:id="@+id/btnTienda"
+        android:layout_width="147dp"
+        android:layout_height="138dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo"
+        android:text="Tienda"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <!-- Botón Inventario -->
+    <Button
+        android:id="@+id/btnInventario"
+        android:layout_width="147dp"
+        android:layout_height="138dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo"
+        android:text="Inventario"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <!-- Botón Perfil -->
+
+    <!-- Icono de moneda -->
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="147dp"
+        android:layout_height="138dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/logo"
+        android:text="Perfil"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <ImageView
+        android:id="@+id/coinIconImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/moneda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Texto de la moneda -->
+    <TextView
+        android:id="@+id/coinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:text="1000"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/coinIconImageView"
+        app:layout_constraintStart_toStartOf="@id/coinIconImageView"
+        app:layout_constraintTop_toTopOf="@id/coinIconImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
