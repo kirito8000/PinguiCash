@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_pinguinos"
+        android:src="@drawable/fondoperfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="413dp"
-        android:layout_height="70dp"
+        android:layout_width="361dp"
+        android:layout_height="61dp"
         android:layout_marginTop="80dp"
         app:layout_constraintBottom_toTopOf="@id/profilePhoto"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081"
-        app:srcCompat="@drawable/letrasfer" />
+        app:srcCompat="@drawable/letraf" />
 
     <ImageView
         android:id="@+id/profilePhoto"
@@ -44,7 +44,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/default_profile_photo"
+        android:src="@drawable/logo"
         android:contentDescription="Foto de perfil"
         android:background="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@id/userNameTextView"
@@ -62,7 +62,7 @@
         android:text="Nombre de Usuario"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/baloo2"
         app:layout_constraintBottom_toTopOf="@id/userEmailTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +77,7 @@
         android:layout_height="wrap_content"
         android:text="usuario@example.com"
         android:textColor="#FFFFFF"
+        android:fontFamily="@font/baloo2"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/btnEditarPerfil"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,15 +92,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F3DC18"
+        android:fontFamily="@font/baloo2"
         android:text="Editar Perfil"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userEmailTextView"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userEmailTextView" />
 
     <!-- Botón de ver historial de compras -->
     <Button
@@ -107,35 +108,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F3DC18"
+        android:fontFamily="@font/baloo2"
         android:text="Ver Historial de Compras"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/btnAjustes"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnEditarPerfil"
-        app:layout_constraintHorizontal_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@id/btnEditarPerfil" />
 
     <!-- Botón de ajustes -->
 
     <!-- Botón de regresar -->
 
-    <Button
-        android:id="@+id/btnAjustes"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_button"
-        android:text="Ajustes"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnHistorialCompras" />
-
+    <!-- Icono de moneda -->
     <ImageButton
         android:id="@+id/btnRegresar"
         android:layout_width="48dp"
@@ -144,15 +131,14 @@
         android:layout_marginBottom="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Regresar"
-        android:src="@drawable/ic_back_arrow"
+        android:src="@drawable/flechaizquiera"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <!-- Icono de moneda -->
     <ImageView
         android:id="@+id/coinIconImageView"
         android:layout_width="48dp"
@@ -175,6 +161,7 @@
         android:text="1000"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        android:fontFamily="@font/baloo2"
         app:layout_constraintEnd_toEndOf="@id/coinIconImageView"
         app:layout_constraintStart_toStartOf="@id/coinIconImageView"
         app:layout_constraintTop_toTopOf="@id/coinIconImageView" />

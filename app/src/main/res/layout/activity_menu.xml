@@ -11,79 +11,119 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_pinguinos"
+        android:src="@drawable/fondomenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <!-- Botón Tienda -->
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="413dp"
-        android:layout_height="70dp"
+        android:layout_width="343dp"
+        android:layout_height="65dp"
         android:layout_marginTop="80dp"
+        android:contentDescription="Ir a la tienda"
         app:layout_constraintBottom_toTopOf="@id/btnTienda"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081"
-        app:srcCompat="@drawable/letrasfer" />
+        app:srcCompat="@drawable/letraf" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnTienda"
         android:layout_width="147dp"
         android:layout_height="138dp"
         android:layout_margin="16dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/logo"
-        android:text="Tienda"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tienda"
+        android:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TIENDA"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:fontFamily="@font/baloo2"
+        app:layout_constraintTop_toBottomOf="@id/btnTienda"
+        app:layout_constraintStart_toStartOf="@id/btnTienda"
+        app:layout_constraintEnd_toEndOf="@id/btnTienda"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <!-- Botón Inventario -->
-    <Button
+
+    <ImageButton
         android:id="@+id/btnInventario"
         android:layout_width="147dp"
         android:layout_height="138dp"
         android:layout_margin="16dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/logo"
-        android:text="Inventario"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/almacen"
+        android:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtInventario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="INVENTARIO"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:fontFamily="@font/baloo2"
+        app:layout_constraintTop_toBottomOf="@id/btnInventario"
+        app:layout_constraintStart_toStartOf="@id/btnInventario"
+        app:layout_constraintEnd_toEndOf="@id/btnInventario"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <!-- Botón Perfil -->
 
-    <!-- Icono de moneda -->
-
-    <Button
+    <ImageButton
         android:id="@+id/btnPerfil"
         android:layout_width="147dp"
         android:layout_height="138dp"
         android:layout_margin="16dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/logo"
-        android:text="Perfil"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:background="@drawable/perfil"
+        android:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.549"
+        tools:ignore="SpeakableTextPresentCheck" />
 
+    <TextView
+        android:id="@+id/txtPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="PERFIL"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:fontFamily="@font/baloo2"
+        app:layout_constraintTop_toBottomOf="@id/btnPerfil"
+        app:layout_constraintStart_toStartOf="@id/btnPerfil"
+        app:layout_constraintEnd_toEndOf="@id/btnPerfil"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Icono de moneda -->
     <ImageView
         android:id="@+id/coinIconImageView"
         android:layout_width="48dp"
@@ -103,8 +143,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="20dp"
         android:text="1000"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
+        android:fontFamily="@font/baloo2"
         app:layout_constraintEnd_toEndOf="@id/coinIconImageView"
         app:layout_constraintStart_toStartOf="@id/coinIconImageView"
         app:layout_constraintTop_toTopOf="@id/coinIconImageView" />
