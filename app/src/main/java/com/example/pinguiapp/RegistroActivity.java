@@ -3,13 +3,24 @@ package com.example.pinguiapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class RegistroActivity extends AppCompatActivity {
+
+
+    Button  registro;
+    TextInputEditText nameUser;
+    TextInputEditText  Correo;
+    TextInputEditText  password;
+    TextInputEditText  confirPass;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +34,18 @@ public class RegistroActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets.consumeSystemWindowInsets();
         });
+
+        registro = findViewById(R.id.registerButton);
+        nameUser = findViewById(R.id.UserTxt);
+        Correo = findViewById(R.id.EmailText);
+        password = findViewById(R.id.passwordTextInputLayout);
+        confirPass = findViewById(R.id.confirmPasswordEditText);
+
+
+
+
+
+
 
         // Encuentra el TextView y establece el OnClickListener
         TextView loginTextView = findViewById(R.id.loginTextView);

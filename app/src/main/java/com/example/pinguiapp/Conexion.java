@@ -48,7 +48,7 @@ public class Conexion {
     }
 
     public boolean loguearUsuario(String username, String password) {
-        String query = "SELECT password FROM usuarios WHERE username = ?";
+        String query = "SELECT*FROM usuarios WHERE username ";
         try (PreparedStatement stmt = con.prepareStatement(query)) {
             stmt.setString(1, username);
             ResultSet rs = stmt.executeQuery();
